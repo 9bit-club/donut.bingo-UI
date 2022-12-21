@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bit-font {
+    font-family: "Press Start 2P", cursive;
+}
+.rubik-font {
+    font-family: 'Rubik', sans-serif;
+}
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+html {
+    scroll-snap-type: y mandatory;
+}
