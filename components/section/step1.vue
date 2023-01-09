@@ -1,35 +1,37 @@
 <template>
   <section class="bg-dark w-full">
-    <div id="welcomeDescription" class="container mx-auto flex">
+    <div id="welcomeDescription" class="container mx-auto flex z-[3]">
       <div class="flex w-1/2 relative items-center justify-center">
         <img
           id="card1"
           src="~/assets/img/BB/BB_420.png"
           alt="BB_1"
-          class="m-auto w-1/3 absolute z-[1]"
+          class="m-auto w-1/3 absolute z-[5]"
         />
         <img
           id="card2"
           src="~/assets/img/BB/BB_1337.png"
           alt="BB_1"
-          class="m-auto w-1/3 absolute z-[2]"
+          class="m-auto w-1/3 absolute z-[6]"
         />
         <img
           id="card3"
           src="~/assets/img/BB/BB_69.png"
           alt="BB_1"
-          class="m-auto w-1/3 absolute z-[1]"
+          class="m-auto w-1/3 absolute z-[5]"
         />
       </div>
-      <div class="w-1/3">
-        <h2 id="text1" class="text-white w-full flex bit-font">
-          STEP 1: <br />
-          Mint your collection card!
+      <div class="w-1/3 z-[6]">
+        <p class="text-white text-[16px] w-full flex bit-font opacity-50 mb-4">
+          STEP 1:
+        </p>
+        <h2 id="text1" class="text-white w-full flex bit-font leading-[36px] mb-6 text-[24px]">
+          Mint your <br /> collection card!
         </h2>
-        <p id="text2" class="text-gray w-full rubik-font">
+        <p id="text2" class="text-gray w-full rubik-font weight-400 text-[24px] leading-[36px]">
           In order to play you will need a collection card. This card will tell
           you which donuts you must collect. You can mint it
-          <a href="/mint" class="text-pink">here</a>
+          <a href="/mint" class="text-pink cursor-pointer">here</a>
         </p>
       </div>
     </div>

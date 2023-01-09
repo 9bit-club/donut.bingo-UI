@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-blue flex">
-    <div id="rewardsSection" class="flex justify-center">
+  <section class="bg-dark flex">
+    <div id="rewardsSection" class="flex justify-center z-[3]">
       <div
         class="w-2/5 rounded-lg overflow-hidden bg-dark text-white bit-font px-4 justify-center text-center flex"
       >
@@ -41,13 +41,16 @@ import { animate, inView } from "motion";
 onMounted(async () => {
   const progressive = ref(0);
   return inView("#rewardsSection", ({ target }) => {
+    animate("#menuAbout", { opacity: [0.2, 1] }, { easing: "ease-out" })
     animate(
       (progress) => {
         progressive.value = Number((progress * 2).toFixed(3));
       },
       { duration: 3, easing: "ease-out" }
     );
-    return (leaveInfo) => {};
+    return (leaveInfo) => {
+      animate("#menuAbout", { opacity: [1, 0.2] }, { easing: "ease-out" })
+    };
   });
 });
 </script>
